@@ -1,0 +1,102 @@
+/* Set a Google Font style for all text on the page */
+body {
+  color: #303A40;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* All headings will use the same font-family */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Joti One', cursive;
+}
+
+/* Size of h3 headings are increased. Spacing around the heading is removed */
+h3 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Styles the animal-container id section with a gradient background and drop shadow */
+#animal-container {
+  width: 310px;
+  background: rgba(236,244,249,1);
+  background: -moz-linear-gradient(top, rgba(236,244,249,1) 0%, rgba(174,210,229,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236,244,249,1)), color-stop(100%, rgba(174,210,229,1)));
+  background: -webkit-linear-gradient(top, rgba(236,244,249,1) 0%, rgba(174,210,229,1) 100%);
+  background: -o-linear-gradient(top, rgba(236,244,249,1) 0%, rgba(174,210,229,1) 100%);
+  background: -ms-linear-gradient(top, rgba(236,244,249,1) 0%, rgba(174,210,229,1) 100%);
+  background: linear-gradient(to bottom, rgba(236,244,249,1) 0%, rgba(174,210,229,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf4f9', endColorstr='#aed2e5', GradientType=0 );
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.66);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.66);
+  box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.66);
+}
+
+/* Resizes the image to 300 (w) x 200 (h)  */
+.main-image {
+  width: 300px;
+  height: 200px;
+}
+
+/* Without this the cat image and paragraph have a margin-left that is too big */
+figure {
+  margin-left: 0;
+}
+
+/* Descendant Selector. It selects any paragraph that is a descendant of a figure. */
+figure p {
+  margin: 0 0 0 1em;
+  font-size: 12px;
+}
+
+/* Styles the information id section with a gradient background */
+#information {
+  background: rgba(174,210,229,1);
+  background: -moz-linear-gradient(top, rgba(174,210,229,1) 0%, rgba(236,244,249,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(174,210,229,1)), color-stop(100%, rgba(236,244,249,1)));
+  background: -webkit-linear-gradient(top, rgba(174,210,229,1) 0%, rgba(236,244,249,1) 100%);
+  background: -o-linear-gradient(top, rgba(174,210,229,1) 0%, rgba(236,244,249,1) 100%);
+  background: -ms-linear-gradient(top, rgba(174,210,229,1) 0%, rgba(236,244,249,1) 100%);
+  background: linear-gradient(to bottom, rgba(174,210,229,1) 0%, rgba(236,244,249,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aed2e5', endColorstr='#ecf4f9', GradientType=0 );
+}
+
+/* It selects the first paragraph that is a descendant inside the information id. */
+#information p:first-child {
+  font-style: italic;
+}
+
+/* Selects the first span that is a direct descendant of a li */
+li>span:first-child {
+  font-weight: 700;
+}
+
+/* No dots for the animal's list items */
+.animal{
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Creates a border with rounded corners at the top-right and bottom-left */
+.outline {
+  border-radius: 10px 50px 10px 50px;
+  -moz-border-radius: 10px 50px 10px 50px;
+  -webkit-border-radius: 10px 50px 10px 50px;
+  border: 5px solid #C1E9FF;
+}
+
+/* Adds a little space between the border and contents of specified elements */
+.pad {
+  padding: 1em;
+}
+
+/* To change the default colors of hyperlinks */
+a, a:visited, a:active {
+  color: #61757F;
+}
+
+/* Changes hover color of hyperlinks */
+a:hover {
+  color: #303A40;
+}
